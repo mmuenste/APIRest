@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "36ec784c-9e1a-466b-be22-f566da25db98",
+		"name": "RESTCONF_IOSXE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WebHostMetaData",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.181.11/.well-known/host-meta",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"181",
+						"11"
+					],
+					"path": [
+						".well-known",
+						"host-meta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restconf",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.181.11/restconf/",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"181",
+						"11"
+					],
+					"path": [
+						"restconf",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Capabilities",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.181.11/restconf/data/ietf-restconf-monitoring:restconf-state/capabilities",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"181",
+						"11"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-restconf-monitoring:restconf-state",
+						"capabilities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yang_Module",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.181.11/restconf/data/ietf-yang-library:modules-state",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"181",
+						"11"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-yang-library:modules-state"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

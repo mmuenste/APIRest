@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "f0b15ed1-8d3a-4517-bc0f-92b2d4e241bf",
+		"name": "RKI_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "district_Solingen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.corona-zahlen.org/districts/05122",
+					"protocol": "https",
+					"host": [
+						"api",
+						"corona-zahlen",
+						"org"
+					],
+					"path": [
+						"districts",
+						"05122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bundeslaender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.corona-zahlen.org/states/BY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"corona-zahlen",
+						"org"
+					],
+					"path": [
+						"states",
+						"BY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bundeslaender_options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://api.corona-zahlen.org/states/HH",
+					"protocol": "https",
+					"host": [
+						"api",
+						"corona-zahlen",
+						"org"
+					],
+					"path": [
+						"states",
+						"HH"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bundeslaender_head",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "https://api.corona-zahlen.org/states",
+					"protocol": "https",
+					"host": [
+						"api",
+						"corona-zahlen",
+						"org"
+					],
+					"path": [
+						"states"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hessen_History_7days",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.corona-zahlen.org/states/HE/history/cases/7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"corona-zahlen",
+						"org"
+					],
+					"path": [
+						"states",
+						"HE",
+						"history",
+						"cases",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
